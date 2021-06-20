@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: black;
+    background-color: rgb(250, 250, 250);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.block {
+    display: block;
+}
+
+.lift-up {
+    transition: transform 400ms linear;
+}
+
+.lift-up:hover {
+    transform: translateY(-30%);
+}
+
+h1 {
+    font-size: 55px;
+}
+
+.lmsprojectimage {
+    width: 300px;
+}
+
+.division-header {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 45px;
+    }
+    .lmsprojectimage {
+        width: 95%;
+    }
+}
