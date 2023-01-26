@@ -89,11 +89,13 @@
 			<div class="col-lg-7 col-12">
 				<div class="d-flex align-items-center gap-2 mt-2">
 					<a href="https://solarityhealth.com/" target="_blank">
-						<h3 class="mb-0">Software Developer 1</h3>
+						<h3 class="mb-0">Software Developer 2</h3>
 					</a>
 					<span class="pt-2 fw-bold">Solarity</span>
 				</div>
-				<span class="fw-bold">Jul 2021 - Present | 2 mos</span>
+				<span class="fw-bold">Jul 2021 - Present |
+					<span id="solarity_length"> </span>
+				</span>
 				<span class="d-block fst-italic">
 					Health Information Accuracy, Accessibility and Interoperability
 				</span>
@@ -325,6 +327,25 @@
 		}, 10000);
 
 	}
+
+	let element = document.getElementById("solarity_length");
+
+	function dateMonthDifference(date1, date2) {
+		let months = (date1.getFullYear() - date2.getFullYear()) * 12;
+		months -= date2.getMonth();
+		months += date1.getMonth();
+		return months <= 0 ? 0 : months;
+	}
+
+	let current_date = new Date();
+
+	let start_date = new Date();
+	start_date.setFullYear(2021, 06, 19);
+
+	let yearDiff = Math.trunc(dateMonthDifference(current_date, start_date) / 12);
+	let monthDiff = dateMonthDifference(current_date, start_date) % 12;
+
+	element.innerText = `${yearDiff} yr ${monthDiff} mos`
 </script>
 
 </html>
