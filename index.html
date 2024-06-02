@@ -99,14 +99,29 @@
 				<span class="d-block fst-italic">
 					Health Information Accuracy, Accessibility and Interoperability
 				</span>
-				<span class="badge rounded-pill bg-secondary">Javascript</span>
-				<span class="badge rounded-pill bg-secondary">C#</span>
-				<span class="badge rounded-pill bg-secondary">SQL Server</span>
+				<span class="badge rounded-pill bg-primary">Javascript</span>
+				<span class="badge rounded-pill bg-primary">C#</span>
+				<span class="badge rounded-pill bg-primary">SQL Server</span>
+				<br>
+				<span class="badge rounded-pill bg-secondary">Open Telemetry</span>
+				<span class="badge rounded-pill bg-secondary">Prometheus</span>
+				<span class="badge rounded-pill bg-secondary">Jaeger</span>
+				<span class="badge rounded-pill bg-secondary">Honeycomb</span>
+				<span class="badge rounded-pill bg-secondary">Active Directory</span>
+				<span class="badge rounded-pill bg-secondary">Gitlab Pipelines</span>
 				<ul class="pt-2 w-75">
 					<li>Developed a system for automatically creating/managing Shadow Accounts for Citrix via AD.
+						The solution would use claims from SAML logon to create the account automatically.
 						This change eliminated unnecessary logins and removed replication wait times. </li>
 					<li>Automated Jira movement and build tracking by writing a custom script to be run by Gitlab.</li>
-					<li>Created reports and implemented a system for saving report search parameters.</li>
+					<li>Designed a system for creating and exporting telemetry data(metrics and traces) from hundreds of
+						services for system monitoring and debugging.
+						Used Open Telemetry to export the data with open source solutions such as Jaeger and Prometheus
+						and the cloud solution Honeycomb for data storage, alerting, and monitoring.</li>
+					</li>
+					<li>Designed a system for storage of secrets and passwords. This would use an encryption service
+						which would select and change the algorithm depending on support.
+						Used HasiCorp's Vault to store and encrypt data.</li>
 					<li>Maintained legacy systems, applied security fixes, and wrote documentation using Confluence.
 					</li>
 				</ul>
@@ -131,10 +146,10 @@
 				<span class="d-block fst-italic">
 					A platform for construction project management, invoicing, budgeting, payments, and more.
 				</span>
-				<span class="badge rounded-pill bg-secondary">Typescript</span>
-				<span class="badge rounded-pill bg-secondary">Vue</span>
-				<span class="badge rounded-pill bg-secondary">PHP</span>
-				<span class="badge rounded-pill bg-secondary">MySQL</span>
+				<span class="badge rounded-pill bg-primary">Typescript</span>
+				<span class="badge rounded-pill bg-primary">Vue</span>
+				<span class="badge rounded-pill bg-primary">PHP</span>
+				<span class="badge rounded-pill bg-primary">MySQL</span>
 				<ul class="pt-2">
 					<li>Developed automated check creation cutting the delivery date of checks in half.</li>
 					<li>Developed robust check monitoring and reconciliation.</li>
