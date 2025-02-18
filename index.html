@@ -110,19 +110,35 @@
 				<span class="badge rounded-pill bg-secondary">Active Directory</span>
 				<span class="badge rounded-pill bg-secondary">Gitlab Pipelines</span>
 				<ul class="pt-2 w-75">
-					<li>Developed a system for automatically creating/managing Shadow Accounts for Citrix via AD.
-						The solution would use claims from SAML logon to create the account automatically.
-						This change eliminated unnecessary logins and removed replication wait times. </li>
-					<li>Automated Jira movement and build tracking by writing a custom script to be run by Gitlab.</li>
-					<li>Designed a system for creating and exporting telemetry data(metrics and traces) from hundreds of
-						services for system monitoring and debugging.
-						Used Open Telemetry to export the data with open source solutions such as Jaeger and Prometheus
-						and the cloud solution Honeycomb for data storage, alerting, and monitoring.</li>
+					<li>Developed a system for automatically creating/managing Shadow Accounts for Citrix via AD. Using
+						SAML claims to create the account in Active Directory eliminated unnecessary logins and removed
+						replication wait times.
 					</li>
-					<li>Designed a system for storage of secrets and passwords. This would use an encryption service
-						which would select and change the algorithm depending on support.
-						Used HasiCorp's Vault to store and encrypt data.</li>
-					<li>Maintained legacy systems, applied security fixes, and wrote documentation using Confluence.
+					<li>
+						Automated Jira movement and built tracking via Gitlab pipelines. Scripts automatically set the
+						build
+						number on a ticket and moved tickets on MR merge.
+					</li>
+					<li>
+						Designed a system for creating and exporting telemetry data(metrics and traces) from hundreds of
+						services for system monitoring and debugging. Used Open Telemetry to export the data with open
+						source solutions Jaeger, Prometheus, and the cloud solution Honeycomb for data storage,
+						alerting,
+						and monitoring.
+						This replaced legacy monitoring systems and allowed for robust monitoring and alerting of errors
+						and
+						throughput.
+					</li>
+					</li>
+					<li>
+						Designed and implemented a new service for storage and encryption of secrets. Supported multiple
+						encryption algorithms including ASP.NET Core Data Protector and HasiCorp's Vault encryption.
+						With
+						multiple storage services, including database and Vault storage.
+						This replaced the legacy encryption solution, allowing more secure storage of secrets.
+					</li>
+					<li>
+						Maintained legacy systems, applied security fixes, and wrote documentation using Confluence.
 					</li>
 				</ul>
 			</div>
